@@ -19,6 +19,10 @@ public class test {
         Animals dog = new Dog();
         Animals bird = new Bird();
 
+        //dog与bird共同固定属性
+        dog.smile();
+        bird.smile();
+
         System.out.println("dog的进食方式:");
         dog.eat();
         System.out.println("bird的进食方式:");
@@ -29,6 +33,7 @@ public class test {
         System.out.println("bird的行动方式:");
         bird.move();
 
+        //运行时动态改变其行为方式
         System.out.println("bird的改变了方式:");
         bird.setEatBehavior(new VegetarianEat());
         bird.eat();
